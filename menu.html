@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu - Your Butter Half</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Butter Half</h1>
+        <p>Delicious Cookies and Cakes</p>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="Feedback.html">Feedback</a>
+        <a href="about.html">About Us</a>
+    </nav>
+    <section>
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+            <div class="menu-item">  
+                <img src="../Project ict/Photoes/Cheese Cookies.jpeg" alt="Cheese Cookies">
+                <h3>Oreo Cookies</h3>
+                <p>Rs 200/-</p>
+                <button class="add-to-cart" onclick="addToCart('Cheese Cookies', 200)">Add to Cart</button>
+            </div>
+            <div class="menu-item">  
+                <img src="../Project ict/Photoes/Butter Cookie.jpeg" alt="butter Cookies">
+                <h3>Butter Cookies</h3>
+                <p>Rs 300/-</p>
+                <button class="add-to-cart" onclick="addToCart('Oreo Cookies', 300)">Add to Cart</button>
+            </div>
+            <div class="menu-item">  
+                <img src="../Project ict/Photoes/Choco Cookies.jpeg" alt="Choco Cookies">
+                <h3>Choco Cookies</h3>
+                <p>Rs 250/-</p>
+                <button class="add-to-cart" onclick="addToCart('Choco Cookies', 250)">Add to Cart</button>
+            </div>
+            <div class="menu-item">  
+                <img src="../Project ict/Photoes/Almond Cake.jpeg" alt="Almond Cake">
+                <h3>Almond Cake</h3>
+                <p>Rs 700/-</p>
+                <button class="add-to-cart" onclick="addToCart('Almond Cake', 700)">Add to Cart</button>
+            </div>
+            <div class="menu-item">  
+                <img src="../Project ict/Photoes/Screenshot 2024-12-13 100035.png" alt="Oreo Cookies">
+                <h3>Oreo Cookies</h3>
+                <p>Rs 100/-</p>
+                <button class="add-to-cart" onclick="addToCart('Oreo Cookies', 100)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="../Project ict/Photoes/Screenshot 2024-12-13 100101.png" alt="Chocolate Velvet Cookies">
+                <h3>Chocolate Velvet Cookies</h3>
+                <p>Rs 130/-</p>
+                <button class="add-to-cart" onclick="addToCart('Chocolate Velvet Cookies', 130)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="../Project ict/Photoes/Screenshot 2024-12-13 100128.png" alt="French Macarons">
+                <h3>French Macarons</h3>
+                <p>Rs 190/-</p>
+                <button class="add-to-cart" onclick="addToCart('French Macarons', 190)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="../Project ict/Photoes/Screenshot 2024-12-13 100322.png" alt="Honey Cookies">
+                <h3>Honey Cookies</h3>
+                <p>Rs 160/-</p>
+                <button class="add-to-cart" onclick="addToCart('Honey Cookies', 160)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="../Project ict/Photoes/peanut-butter-chocolate-swirl-cookies-2.jpg" alt="Peanut Cookies">
+                <h3>Peanut Cookies</h3>
+                <p>Rs 160/-</p>
+                <button class="add-to-cart" onclick="addToCart('Peanut Cookies', 160)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+   
+    <div id="side-cart" class="side-cart">
+        <h2>Cart</h2>
+        <div id="cart-items"></div>
+        <p id="total-price">Total: Rs 0</p>
+        <button onclick="placeOrder()">Place Order</button>
+        <button onclick="closeCart()">Close</button> 
+    </div>
+    <footer>
+        <p>Contact us:</p>
+        <div class="contact-buttons">
+            <a href="tel:+923270222414" class="contact-btn">
+                <img src="../Project ict/Photoes/Call Button.png" alt="Call Icon" class="contact-icon"> Call Us
+            </a>
+            <a href="mailto:hasham14fw@gmail.com" class="contact-btn">
+                <img src="../Project ict/Photoes/Mail Button.png" alt="Email Icon" class="contact-icon"> Email Us
+            </a>
+        </div>
+    </footer>
+    <script src="scriptcart.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback - The Butter Half</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <header>
+        <h1>The Butter Half</h1>
+        <p>Delicious Cookies and Cakes</p>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="feedback.html" class="active">Feedback</a>  
+        <a href="about.html">About us</a> 
+        
+    </nav>
+<section class="feedback-section">
+        <h2>We Value Your Feedback</h2>
+        <form id="feedback-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="message">Feedback:</label>
+            <textarea id="message" name="message" placeholder="Write your feedback here..." rows="4" required></textarea>
+            <button type="button" onclick="submitFeedback()">Submit Feedback</button>
+        </form>
+</section>
+<footer>
+    <p>Contact us:</p>
+    <div class="contact-buttons">
+        <a href="tel:+923270222414" class="contact-btn">
+            <img src="../Project ict/Photoes/Call Button.png" alt="Call Icon" class="contact-icon"> Call Us
+        </a>
+        <a href="mailto:hasham14fw@gmail.com" class="contact-btn">
+            <img src="../Project ict/Photoes/Mail Button.png" alt="Email Icon" class="contact-icon"> Email Us
+        </a>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
